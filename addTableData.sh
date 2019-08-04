@@ -1,5 +1,5 @@
 
-docker cp ./entry/sqltool.rc hs:/home/hsql/
+docker cp ./entry/sqltool.rc hsqldb:/home/hsql/
 docker exec hsqldb bash -c "java -jar /opt/hsqldb/sqltool.jar --autoCommit tpch - < /scripts/00.sql"
 sleep 2
 docker exec hsqldb bash -c "java -jar /opt/hsqldb/sqltool.jar --autoCommit tpch - < /scripts/01.sql"
