@@ -1,1 +1,0 @@
-CREATE USER uu PASSWORD 'ujdbc19!#hs' [ ADMIN ];
